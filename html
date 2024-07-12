@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sip & Play - A board game cafe serving boba tea and small bites in Park Slope, Brooklyn.">
+  <title>Sip & Play</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <img src="https://codedex.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F46eba020-df85-4b97-92fd-a424e844bfac%2Fc500cf29-b6a6-447e-a689-012663432442%2Fsipnplay.png?table=block&id=5003af80-7af3-42e7-a67c-a038d68f7f19&spaceId=46eba020-df85-4b97-92fd-a424e844bfac&width=2000&userId=&cache=v2" alt="Sip & Play Logo" class="logo">
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="top-image">
+    <img src="https://media.timeout.com/images/105611235/1372/772/image.jpg" alt="Top Image" class="top-image">
+    <div class="animated-text">
+      <svg viewBox="0 0 100 20">
+        <defs>
+          <linearGradient id="gradient">
+            <stop offset="0%" stop-color="white" />
+            <stop offset="100%" stop-color="white" />
+          </linearGradient>
+          <pattern id="wave" x="0" y="-0.5" width="100%" height="100%" patternUnits="userSpaceOnUse">
+            <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)">
+              <animateTransform attributeName="transform" begin="0s" dur="1.5s" type="translate" from="0,0" to="40,0" repeatCount="indefinite" />
+            </path>
+          </pattern>
+        </defs>
+        <text text-anchor="middle" x="50" y="15" font-size="17" fill="white" fill-opacity="0.1">Sip & Play</text>
+        <text text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)" fill-opacity="1">Sip & Play</text>
+      </svg>
+    </div>
+  </section>
+
+  <main>
+    <section id="about">
+      <h1>Welcome to Sip & Play</h1>
+      <p>Your favorite board game cafe serving delicious boba tea and small bites!</p>
+    </section>
+
+    <section id="menu">
+      <h2>Our Menu</h2>
+      <div class="wrapper">
+        
+        <div class="container" id="c0">
+          <div class="image" id="i0">
+            <model-viewer src="https://eulerlagrangian.github.io/testingte/iced-coffee.glb" alt="Iced Coffee" auto-rotate camera-controls></model-viewer>
+          </div>
+          <div class="story" id="s0">
+            <div class="info">
+              <h3>Iced Coffee</h3>
+              <p>Cool and refreshing iced coffee, perfect for a hot day.</p>
+            </div>
+          </div>
+        </div>
+        <div class="container" id="c1">
+          <div class="image" id="i1">
+            <model-viewer src="https://eulerlagrangian.github.io/testingte/cafe-latte-with-art.glb" alt="Cafe Latte with Art" auto-rotate camera-controls></model-viewer>
+          </div>
+          <div class="story" id="s1">
+            <div class="info">
+              <h3>Cafe Latte with Art</h3>
+              <p>A delightful cafe latte with beautiful latte art on top.</p>
+            </div>
+          </div>
+        </div>
+        <div class="container" id="c2">
+          <div class="image" id="i2">
+            <model-viewer src="https://eulerlagrangian.github.io/testingte/boba-tea-cup.glb" alt="Boba Tea Cup" auto-rotate camera-controls></model-viewer>
+          </div>
+          <div class="story" id="s2">
+            <div class="info">
+              <h3>Boba Tea Cup</h3>
+              <p>Sweet and chewy boba pearls in a delicious tea base.</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <section id="events">
+      <h2>Events Calendar</h2>
+      <div class="calendar">
+        <div class="timeline">
+        
+        </div>
+        <div class="days">
+          <div class="day mon">
+            <div class="date">
+              <p class="date-num">10</p>
+              <p class="date-day">Mon</p>
+            </div>
+            <div class="events">
+              <div class="event start-10 end-12 corp-fi">
+                <p class="title">Corporate Finance</p>
+                <p class="time">10 AM - 12 PM</p>
+              </div>
+              <div class="event start-1 end-4 ent-law">
+                <p class="title">Entertainment Law</p>
+                <p class="time">1PM - 4PM</p>
+              </div>
+            </div>
+          </div>
+          <div class="day wed">
+            <div class="date">
+              <p class="date-num">11</p>
+              <p class="date-day">Wed</p>
+            </div>
+            <div class="events">
+              <div class="event start-12 end-1 writing">
+                <p class="title">Writing Seminar</p>
+                <p class="time">11 AM - 12 PM</p>
+              </div>
+              <div class="event start-2 end-5 securities">
+                <p class="title">Securities Regulation</p>
+                <p class="time">2 PM - 5 PM</p>
+              </div>
+            </div>
+          </div>
+          <div class="day thurs">
+            <div class="date">
+              <p class="date-num">12</p>
+              <p class="date-day">Thurs</p>
+            </div>
+            <div class="events">
+              <div class="event start-10 end-12 corp-fi">
+                <p class="title">Corporate Finance</p>
+                <p class="time">10 AM - 12 PM</p>
+              </div>
+              <div class="event start-1 end-4 ent-law">
+                <p class="title">Entertainment Law</p>
+                <p class="time">1PM - 4PM</p>
+              </div>
+            </div>
+          </div>
+          <div class="day fri">
+            <div class="date">
+              <p class="date-num">13</p>
+              <p class="date-day">Fri</p>
+            </div>
+            <div class="events">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required
